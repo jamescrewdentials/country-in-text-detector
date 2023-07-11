@@ -18,7 +18,9 @@ var cities = countryDetector.detect("I just moved from Austin, TX to NYC.");
 */
 
 // handles local/international names
-var local = countryDetector.detect("RU: Я родился в России. EN: I was born in Russia.");
+var local = countryDetector.detect(
+  "RU: Я родился в России. EN: I was born in Russia."
+);
 /*
 [
 	{ iso3166: 'RU', name: 'Russia', type: 'country', matches: [ 'России', 'Russia' ] }
@@ -26,7 +28,9 @@ var local = countryDetector.detect("RU: Я родился в России. EN: I
 */
 
 // handles frequent language mutations
-var mutations = countryDetector.detect("FR: J'ai vécu en Italie. EN: I lived in Italy.");
+var mutations = countryDetector.detect(
+  "FR: J'ai vécu en Italie. EN: I lived in Italy."
+);
 /*
 [
 	{ iso3166: 'IT', name: 'Italy', type: 'country', matches: [ 'Italie', 'Italy' ] }
